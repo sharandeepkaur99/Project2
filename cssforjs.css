@@ -1,0 +1,50 @@
+button.remove:hover{background-color: #FF4F55;
+
+}
+
+input{
+
+  cursor: pointer;
+
+}
+
+input:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: pink;
+}
+
+li {
+  text-align: left;
+  font-size: 15px;
+  font-style: normal;
+  list-style: none;
+  margin: 0;
+}
+
+ul li {
+  cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 45px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 8px;
+
+}
+
+ul li:hover {
+  background: lightgrey;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: red;
+  border-style: dotted;
+  border-width: 0 2px 2px 0;
+  top: 5px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 5px;
+}
